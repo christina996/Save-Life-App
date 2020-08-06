@@ -1,0 +1,111 @@
+body {
+  padding: 0;
+  margin: 0;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #2b2c2e;
+  color: #ffd600;
+  overflow: hidden;
+}
+
+#loadingImg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 100;
+  width: 50px;
+  height: 50px;
+}
+
+.disabledBtn {
+  opacity: 0.65;
+  cursor: not-allowed;
+}
+
+#toolbar {
+  color: #ffd600;
+  background: #2b2c2e;
+}
+
+#toolbar .k-toolbar-first-visible {
+  width: 32px;
+  height: 32px;
+}
+
+#container {
+  display: flex;
+  overflow: hidden;
+  height: 650px;
+}
+
+#main {
+  width: 100%;
+}
+
+#map {
+  height: 500px;
+  position: relative;
+}
+
+#HomeButton {
+  position: absolute;
+  top: 135px;
+  left: 20px;
+  z-index: 50;
+  display: none;
+}
+
+#clearButton {
+  position: absolute;
+  top: 90px;
+  left: 20px;
+  z-index: 50;
+  cursor: pointer;
+  display: none;
+}
+
+#clearBtnImgContainer {
+  border: solid 1px #666;
+  border-radius: 5px;
+  background-color: #fff;
+  width: 31px;
+  height: 30px;
+}
+
+.clearImg {
+  height: 21px;
+  padding: 5px;
+}
+
+#asideList {
+  width: 0%;
+  background: #2b2c2e;
+  margin-bottom: -1px;
+  /* min-height: 510px; */
+  font: inherit;
+}
+
+.hospitalInfo {
+  background: #2b2c2e;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.k-button-icon {
+  padding: 0 !important;
+}
+
+.k-text-selection ::selection,
+.k-widget ::selection {
+  background-color: #00b8d4 !important;
+  color: white;
+}
+
+@media screen and (max-width: 600px) {
+  .hospitalInfo {
+    word-break: break-word;
+    padding: 20px 6px;
+  }
+}

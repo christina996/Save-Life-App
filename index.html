@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- link default kendo css -->
+    <link
+      rel="stylesheet"
+      href="https://kendo.cdn.telerik.com/2020.2.617/styles/kendo.default-v2.min.css"
+    />
+
+    <!-- link esri arc gis css -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://js.arcgis.com/3.33/esri/css/esri.css"
+    />
+
+    <!-- link main css of all css files in app  -->
+    <link rel="stylesheet" type="text/css" href="style/style.css" />
+
+    <title>Save Life</title>
+  </head>
+
+  <body>
+    <header>
+      <div id="toolbar"></div>
+    </header>
+
+    <main id="container">
+      <aside id="asideList"></aside>
+      <div id="main">
+        <div id="map">
+          <div id="clearButton"></div>
+          <div id="HomeButton"></div>
+        </div>
+      </div>
+    </main>
+
+    <!-- kendo templates -->
+    <script type="text/x-kendo-template" id="templateZoomBtn">
+      <a class='k-button k-grid-zoom  k-grid-custom-zoom' ></a>
+    </script>
+
+    <script type="text/x-kendo-template" id="templateRouteBtn">
+      <a  class='k-button k-grid-route  k-grid-custom-route'></a>
+    </script>
+
+    <script type="text/x-kendo-template" id="templateListView">
+      <div class="hospitalInfo">
+        <h3>#:Name#</h3>
+        <button  class="k-button k-custom-zoom"></button>
+      </div>
+    </script>
+
+    <script>
+      // handling dojo configs and path used in side application
+      dojoConfig = {
+        parseOnLoad: false,
+        async: true,
+        packages: [
+          {
+            name: 'modules',
+            location: location.pathname.replace(/\/[^/]*$/, '') + '/modules',
+          },
+          {
+            name: 'widgets',
+            location: location.pathname.replace(/\/[^/]*$/, '') + '/widgets',
+          },
+          {
+            name: 'configs',
+            location: location.pathname.replace(/\/[^/]*$/, '') + '/configs',
+          },
+        ],
+      };
+    </script>
+
+    <script src="https://kendo.cdn.telerik.com/2020.2.617/js/jquery.min.js"></script>
+    <script src="https://kendo.cdn.telerik.com/2020.2.617/js/kendo.all.min.js"></script>
+
+    <script src="https://js.arcgis.com/3.33/"></script>
+    <script src="main.js"></script>
+  </body>
+</html>

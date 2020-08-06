@@ -1,0 +1,6 @@
+/* main style */
+@import url(CommonStyle.css);
+
+/* widgets styles */
+@import url(../widgets/GridView/gridView.css);
+@import url(../widgets/ListView/listView.css);

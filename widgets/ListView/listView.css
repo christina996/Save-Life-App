@@ -1,0 +1,25 @@
+.listView .k-button {
+  width: 20px;
+  height: 20px;
+  background-image: url('../../assets/icons/Zoom.png');
+  background-color: white;
+  border-radius: 50%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+}
+.k-listview {
+  border: none;
+}
+.listView h3 {
+  margin: 0;
+  line-height: 1.1em;
+  font-size: 1.1em;
+  font-weight: normal;
+  color: #999;
+}
+
+.listView div:hover {
+  background-color: white;
+}

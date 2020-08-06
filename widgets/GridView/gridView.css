@@ -1,0 +1,37 @@
+.gridView a.k-button {
+  width: 25px;
+  height: 25px;
+  background-color: transparent;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+}
+
+thead {
+  background-color: #ffd600;
+  color: white;
+}
+
+.k-grid {
+  background-clip: unset;
+}
+
+.k-grid-content.k-auto-scrollable {
+  height: 125px;
+  overflow: scroll;
+}
+.k-grid-custom-route {
+  background-image: url('../../assets/icons/Route.png');
+}
+
+.k-grid-custom-route:hover {
+  background-image: url('../../assets/icons/Route.png');
+}
+
+.k-grid-custom-zoom {
+  background-image: url('../../assets/icons/Zoom.png');
+}
+
+.k-grid-custom-zoom:hover {
+  background-image: url('../../assets/icons/Zoom.png');
+}
